@@ -1,4 +1,4 @@
 .vscode/
-dist/
-build/
-depression_classifier.egg-info/
+/dist
+/build
+/depression_classifier.egg-info
