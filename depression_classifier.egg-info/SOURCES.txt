@@ -1,9 +1,0 @@
-README.md
-setup.py
-depression_classifier.egg-info/PKG-INFO
-depression_classifier.egg-info/SOURCES.txt
-depression_classifier.egg-info/dependency_links.txt
-depression_classifier.egg-info/entry_points.txt
-depression_classifier.egg-info/not-zip-safe
-depression_classifier.egg-info/requires.txt
-depression_classifier.egg-info/top_level.txt
