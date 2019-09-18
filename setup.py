@@ -20,7 +20,6 @@ run_requirements = [
     'flasgger==0.9.2',
     'Flask==1.0.3',
     'Flask_RESTful==0.3.7',
-    'Pillow==6.1.0',
     'loguru==0.3.2',
     'scikit-learn==0.21.3'
 ]

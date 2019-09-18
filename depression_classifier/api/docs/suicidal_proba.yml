@@ -1,7 +1,7 @@
 Probabilidade do usuário estar tendendo ao suicídio.
 ---
 tags:
-  - Classificação
+  - Probabilidade
 parameters:
   - name: body
     in: body
@@ -18,12 +18,15 @@ responses:
     description: Probabilidade de tendência suicida de um usuário.
     examples:
       resposta: {
-        message: "CLASSIFICATION_SUCCESSFUL",
-        prediction: "Alvara_SC"
+        message: "PROBABILITY_SUCCESS",
+        result: {
+            porcentage:  0.6666666666666666,
+            label: no_suicidal_proba
+          }
         }
   500:
     description: Erro no json enviado
     examples:
       resposta: {
-        mensagem: "CLASSIFICATION_FAILED"
+        mensagem: "PARAMETERS_ERROR"
       }

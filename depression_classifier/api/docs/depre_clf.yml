@@ -18,12 +18,16 @@ responses:
     description: Classificação de frase suicida.
     examples:
       resposta: {
-        message: "CLASSIFICATION_SUCCESSFUL",
-        prediction: "Alvara_SC"
+        sentence: "Hoje eu acordei feliz",
+        message: "CLASSIFICATION_SUCCESS",
+        result: {
+            porcentage: 0.906524647642519,
+            label: "not_depression"
+          }
         }
   500:
     description: Erro no json enviado
     examples:
       resposta: {
-        mensagem: "CLASSIFICATION_FAILED"
+        mensagem: "PARAMETERS_ERROR"
       }

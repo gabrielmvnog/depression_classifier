@@ -9,8 +9,8 @@ __version__ = '0.0.1'
 template = {
     "swagger": "2.0",
     "info": {
-        "title": "Classificador de depressão",
-        "description": "Classificação de depressão.",
+        "title": "Classificador de depressão e tendências suicidas",
+        "description": "Classificação de depressão e tendências suicidas - TCC IESB 2019.",
         "version": __version__
     },
     "consumes": [

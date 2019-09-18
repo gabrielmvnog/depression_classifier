@@ -20,6 +20,8 @@ class DepressionClfAPI(Resource):
 
         if sentence:
 
+            logger.info('Processing sentence.')
+
             porcentage, label = clf.predict_sentence(sentence)
 
             response_object = {
@@ -30,6 +32,8 @@ class DepressionClfAPI(Resource):
                 },
                 "message": "CLASSIFICATION_SUCCESS"
             }
+
+            logger.info('Classification -> OK')
 
             return response_object, 200
 
@@ -61,6 +65,8 @@ class SuicidalProbaAPI(Resource):
 
         if batch:
 
+            logger.info('Processing batchs')
+
             for sentence in batch:
 
                 _, label = clf.predict_sentence(sentence)
@@ -77,6 +83,8 @@ class SuicidalProbaAPI(Resource):
                 },
                 "message": "PROBABILITY_SUCCESS"
             }
+
+            logger.info('Probability -> OK')
 
             return response_object, 200
 
