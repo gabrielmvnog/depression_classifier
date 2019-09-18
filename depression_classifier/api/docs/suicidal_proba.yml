@@ -1,0 +1,29 @@
+Probabilidade do usuário estar tendendo ao suicídio.
+---
+tags:
+  - Classificação
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      required:
+        - base64
+      properties:
+        batch:
+          type: list
+          description: Conjunto de frases de um usuário.
+responses:
+  200:
+    description: Probabilidade de tendência suicida de um usuário.
+    examples:
+      resposta: {
+        message: "CLASSIFICATION_SUCCESSFUL",
+        prediction: "Alvara_SC"
+        }
+  500:
+    description: Erro no json enviado
+    examples:
+      resposta: {
+        mensagem: "CLASSIFICATION_FAILED"
+      }

@@ -1,0 +1,29 @@
+Classificação de frase depressiva.
+---
+tags:
+  - Classificação
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      required:
+        - base64
+      properties:
+        sentence:
+          type: string
+          description: Uma frase qualquer.
+responses:
+  200:
+    description: Classificação de frase suicida.
+    examples:
+      resposta: {
+        message: "CLASSIFICATION_SUCCESSFUL",
+        prediction: "Alvara_SC"
+        }
+  500:
+    description: Erro no json enviado
+    examples:
+      resposta: {
+        mensagem: "CLASSIFICATION_FAILED"
+      }
