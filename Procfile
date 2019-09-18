@@ -1,1 +1,1 @@
-web: python depression_classifier 5000 true
+web: python depression_classifier $PORT true
