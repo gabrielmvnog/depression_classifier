@@ -21,7 +21,8 @@ run_requirements = [
     'Flask==1.0.3',
     'Flask_RESTful==0.3.7',
     'loguru==0.3.2',
-    'scikit-learn==0.21.3'
+    'scikit-learn==0.21.3',
+    'Unidecode==1.1.0'
 ]
 
 with io.open('./depression_classifier/__init__.py', encoding='utf8') as version_f:
