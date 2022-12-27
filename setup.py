@@ -16,7 +16,7 @@ integration_test_requirements = [
     'pytest',
 ]
 run_requirements = [
-    'setuptools==39.0.1',
+    'setuptools==65.5.1',
     'flasgger==0.9.2',
     'Flask==1.0.3',
     'Flask_RESTful==0.3.7',
